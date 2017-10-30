@@ -1,0 +1,188 @@
+<!doctype html>
+<!--[if IE 8]> <html class="lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html class="lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9] <!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>Navigation Full Guest</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="cleartype" content="on"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <!-- Home screen icons -->
+    <link rel="apple-touch-icon" href="60x60-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="76x76-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="120x120-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="152x152-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="192x192-precomposed.png"/>
+    <link rel="icon" sizes="192x192" href="192x192-android.png"/>
+
+    <!--[if lt IE 9]>
+        <script src="https://http2.mlstatic.com/static/org-img/ch/vendor/html5shiv/html5shiv-3.7.0.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/300-400-600.css"/>
+
+    <!-- if webfonts are supported print: -->
+    <link rel="stylesheet" href="navigation.css"/>
+    <!-- if browser lacks webfont support print: -->
+    <!-- <link rel="stylesheet" href="navigation-fallback.css"> -->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="navigation__large.css"/>
+    <![endif]-->
+</head>
+
+<!-- Add the country in "data-country" attribute on <body> to get specific styling and the portuguese logo -->
+
+<body data-site="MLA" data-country="AR">
+
+    <header role="banner" class="nav-header">
+        <div class="nav-bounds nav-bounds-with-cart nav-bounds-large">
+            <!-- Add the country ID in "data-country" attribute on <body> to get the portuguese logo -->
+            <a class="nav-logo" href="/" tabindex="1">Mercado Libre - Donde comprás y vendés de todo</a>
+            <!-- Menu - Switch checkbox (Small devices) -->
+            <input type="checkbox" id="nav-header-menu-switch"/>
+            <div class="nav-header-menu-wrapper">
+                <!-- Menu - Hamburger (Small devices) -->
+                <label for="nav-header-menu-switch" aria-controls="nav-header-menu" data-fastClick tabindex="3">
+                    <span class="hamburger-top-bread"></span>
+                    <span class="hamburger-patty"></span>
+                    <span class="hamburger-bottom-bread"></span>
+                </label>
+                <!-- Menu - Expandable (Not Logged in) -->
+                <nav id="nav-header-menu">
+                    <a class="option-register" href="https://registration.mercadolibre.com.ar/registration/" rel="nofollow">Regístrate</a>
+                    <a class="option-login" href="https://www.mercadolibre.com/jms/mla/lgz/login" rel="nofollow">Ingresa</a>
+                    <a class="option-help" href="http://ayuda.mercadolibre.com.ar/">Ayuda</a>
+                </nav>
+                <!-- Cuando el carrito esta vacio debe tener la clase "nav-cart-empty" -->
+                <a href="#" title="Carrito" class="nav-cart nav-cart-empty">
+                    <i class="nav-icon-cart"></i>
+                    <span class="nav-icon-cart-quantity">9+</span>
+                </a>
+            </div>
+            <form class="nav-search" action="/jm/search" method="GET" role="search">
+                <input type="text" class="nav-search-input" name="as_word" max-length="120" data-fastClick tabindex="2" placeholder="Buscar productos, marcas y más…"/>
+                <button class="nav-search-clear-btn" type="button" title="Limpiar"></button>
+                <button class="nav-search-close-btn" type="button" title="Cerrar"></button>
+                <button type="submit" class="nav-search-btn" data-fastClick tabindex="3">
+                    <i class="nav-icon-search"><span>Buscar</span></i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Add `ch-wizard` or `ch-box-lite` classname if you are using an alternative background color -->
+        <div class="nav-main-content nav-bounds">
+            Your content here.
+        </div>
+    </main>
+    <input type="checkbox" id="nav-footer-access-switch" checked/>
+    <div class="nav-footer-access">
+        <label for="nav-footer-access-switch" data-fastClick>Más información <i class="nav-icon-chevron-up"></i></label>
+
+        <div class="nav-footer-access-content">
+            <div class="nav-bounds nav-bounds-large">
+                <div class="nav-footer-access-col">
+                    <h5 class="nav-footer-access-title">Acerca de</h5>
+                    <ul>
+                        <li><a href="http://institucional.mercadolibre.com/">Mercado Libre</a></li>
+                        <li><a href="http://investor.mercadolibre.com">Investor relations</a></li>
+                        <li><a href="http://www.mercadolibre.com.ar/sitemap.html">Mapa del Sitio</a></li>
+                        <li><a href="http://tendencias.mercadolibre.com.ar/">Tendencias</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer-access-col">
+                    <h5 class="nav-footer-access-title">Otros sitios</h5>
+                    <ul>
+                        <li><a href="http://developers.mercadolibre.com">Developers</a></li>
+                        <li><a href="http://www.mercadopago.com.ar">Mercado Pago</a></li>
+                        <li><a href="http://www.mercadoshops.com.ar">Mercado Shops</a></li>
+                        <li><a href="http://envios.mercadolibre.com.ar">Mercado Envíos</a></li>
+                        <li><a href="https://publicidad.mercadolibre.com.ar" target="_self">Mercado Libre Publicidad</a></li>
+                        <li><a href="http://ideas.mercadolibre.com" target="_self">Mercado Libre Ideas</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer-access-col">
+                    <h5 class="nav-footer-access-title">Ayuda</h5>
+                    <ul>
+                        <li><a href="http://ayuda.mercadolibre.com.ar/articulo/comprar-un-producto-1337029481860-000001241">Comprar</a></li>
+                        <li><a href="http://ayuda.mercadolibre.com.ar/categoria/vender-sell">Vender</a></li>
+                        <li><a href="http://ayuda.mercadolibre.com.ar/contacto">Resolución de problemas</a></li>
+                        <li><a href="http://ayuda.mercadolibre.com.ar/categoria/seguridad-seg">Centro de Seguridad</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer-access-col">
+                    <h5 class="nav-footer-access-title">Redes sociales</h5>
+                    <ul>
+                        <li><a href="https://twitter.com/Mercadolibre">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/MercadoLibre">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/mercadolibre.arg">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/user/mercadolibre">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer-access-col">
+                    <h5 class="nav-footer-access-title">Mi cuenta</h5>
+                    <ul>
+                        <li><a rel="nofollow" href="http://myaccount.mercadolibre.com.ar/summary/">Resumen</a></li>
+                        <li><a rel="nofollow" href="http://myaccount.mercadolibre.com.ar/bookmarks/list">Favoritos</a></li>
+                        <li><a rel="nofollow" href="http://vender.mercadolibre.com.ar/">Vender</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer role="contentinfo" class="nav-footer">
+
+        <div class="nav-footer-downloadapp-banner">
+            <!-- "Download app" banner -->
+            <a class="nav-footer-downloadapp" href="http://www.mercadolibre.com.ar/gz/app">
+                <i class="nav-icon nav-icon-downloadapp"></i>
+                ¡Descarga gratis la App de Mercado Libre!
+            </a>
+        </div>
+
+        <div class="nav-bounds nav-bounds-large">
+
+            <!-- Logged in content (small devices) -->
+            <p class="nav-footer-user logged">Ingresaste como <strong>USERNAME</strong> <a href="https://www.mercadolibre.com/jms/mla/lgz/logout" rel="nofollow">Salir</a></p>
+
+            <!-- Not logged in content (small devices) -->
+            <!--
+            <p class="nav-footer-user">
+                <a class="nav-footer-login" href="https://www.mercadolibre.com/jms/mla/lgz/login" rel="nofollow">Ingresar a mi cuenta</a>
+                <a class="nav-footer-registration" href="https://registration.mercadolibre.com.ar/registration/" rel="nofollow">Registrarme</a>
+            </p>
+            -->
+
+            <div class="nav-footer-info-wrapper">
+                <!-- Each country has different copyrights. Check which copyright you need. -->
+                <div class="nav-footer-primaryinfo">
+                    <small class="nav-footer-copyright">Copyright © 1999-2017 MercadoLibre S.R.L.</small>
+
+                    <nav class="nav-footer-navigation">
+                        <a href="http://www.mercadolibre.com/empleos">Trabaja con nosotros</a>
+                        <a href="http://www.mercadolibre.com.ar/seguro_terminos.html">Términos y condiciones</a>
+                        <a href="http://www.mercadolibre.com.ar/seguro_privacidad.html">Políticas de privacidad</a>
+                        <a href="http://ayuda.mercadolibre.com.ar/">Ayuda</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="nav-footer-downloadapp-wrapper">
+                <!-- "Download app" button -->
+                <a class="nav-footer-downloadapp" href="http://www.mercadolibre.com.ar/gz/app">
+                    <i class="nav-icon nav-icon-downloadapp"></i>
+                    ¡Descarga gratis la App de Mercado Libre!
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

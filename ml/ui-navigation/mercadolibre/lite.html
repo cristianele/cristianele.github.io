@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if IE 8]> <html class="lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html class="lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9] <!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>Navigation Lite</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="cleartype" content="on"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <!-- Home screen icons -->
+    <link rel="apple-touch-icon" href="60x60-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="76x76-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="120x120-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="152x152-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="192x192-precomposed.png"/>
+    <link rel="icon" sizes="192x192" href="192x192-android.png"/>
+
+    <!--[if lt IE 9]>
+        <script src="https://http2.mlstatic.com/static/org-img/ch/vendor/html5shiv/html5shiv-3.7.0.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/300-400-600.css"/>
+
+    <!-- if webfonts are supported print: -->
+    <link rel="stylesheet" href="navigation.css"/>
+    <!-- if browser lacks webfont support print: -->
+    <!-- <link rel="stylesheet" href="navigation-fallback.css"> -->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="navigation__large.css"/>
+    <![endif]-->
+</head>
+
+<!-- Add the country in "data-country" attribute on <body> to get specific styling and the portuguese logo -->
+
+<body data-site="MLA" data-country="AR">
+
+    <header role="banner" class="nav-header">
+        <!--
+            Cuando el header tiene el carrito hay que agregar la clase
+            nav-bounds-with-cart, se utiliza para posicionar iconos en mobile y desktop
+        -->
+        <div class="nav-bounds nav-bounds-large">
+            <!-- Add the country ID in "data-country" attribute on <body> to get the portuguese logo -->
+            <a class="nav-logo" href="/" tabindex="1">Mercado Libre - Donde comprás y vendés de todo</a>
+
+            <!-- Menu - Switch checkbox (Small devices) -->
+            <input type="checkbox" id="nav-header-menu-switch"/>
+            <div class="nav-header-menu-wrapper">
+                <!-- Menu - Hamburger (Small devices) -->
+                <label for="nav-header-menu-switch" aria-controls="nav-header-menu" data-fastClick tabindex="3">
+                    <span class="hamburger-top-bread"></span>
+                    <span class="hamburger-patty"></span>
+                    <span class="hamburger-bottom-bread"></span>
+                </label>
+                <!-- Menu - Expandable (Logged in) -->
+                <nav id="nav-header-menu">
+                    <div class="nav-header-user">
+                        <label for="nav-header-user-switch" data-fastClick tabindex="4">
+                            <!--[if lt IE 9]><a href="https://myaccount.mercadolibre.com.ar/summary/" rel="nofollow"><![endif]-->
+                            <i class="nav-icon-user"></i>
+                            Andres
+                            <!--[if lt IE 9]></a><![endif]-->
+                        </label>
+                        <input type="checkbox" id="nav-header-user-switch"/>
+                        <nav class="nav-header-user-layer">
+                            <a class="option-my-account" href="https://myaccount.mercadolibre.com.ar/summary/" rel="nofollow">Mi cuenta</a>
+                            <a class="option-logout" href="https://www.mercadolibre.com/jms/mla/lgz/logout" rel="nofollow">Salir</a>
+                        </nav>
+                    </div>
+                    <a class="option-help" href="http://ayuda.mercadolibre.com.ar/" tabindex="7">Ayuda</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Add `ch-wizard` or `ch-box-lite` classname if you are using an alternative background color -->
+        <div class="nav-main-content nav-bounds nav-bounds-large">
+            Your content here.
+        </div>
+    </main>
+    <footer role="contentinfo" class="nav-footer">
+
+        <div class="nav-footer-downloadapp-banner">
+            <!-- "Download app" banner -->
+            <a class="nav-footer-downloadapp" href="http://www.mercadolibre.com.ar/gz/app">
+                <i class="nav-icon nav-icon-downloadapp"></i>
+                ¡Descarga gratis la App de Mercado Libre!
+            </a>
+        </div>
+
+        <div class="nav-bounds nav-bounds-large">
+
+            <!-- Logged in content (small devices) -->
+            <p class="nav-footer-user logged">Ingresaste como <strong>USERNAME</strong> <a href="https://www.mercadolibre.com/jms/mla/lgz/logout" rel="nofollow">Salir</a></p>
+
+            <!-- Not logged in content (small devices) -->
+            <!--
+            <p class="nav-footer-user">
+                <a class="nav-footer-login" href="https://www.mercadolibre.com/jms/mla/lgz/login" rel="nofollow">Ingresar a mi cuenta</a>
+                <a class="nav-footer-registration" href="https://registration.mercadolibre.com.ar/registration/" rel="nofollow">Registrarme</a>
+            </p>
+            -->
+
+            <div class="nav-footer-info-wrapper">
+                <!-- Each country has different copyrights. Check which copyright you need. -->
+                <div class="nav-footer-primaryinfo">
+                    <small class="nav-footer-copyright">Copyright © 1999-2017 MercadoLibre S.R.L.</small>
+
+                    <nav class="nav-footer-navigation">
+                        <a href="http://www.mercadolibre.com/empleos">Trabaja con nosotros</a>
+                        <a href="http://www.mercadolibre.com.ar/seguro_terminos.html">Términos y condiciones</a>
+                        <a href="http://www.mercadolibre.com.ar/seguro_privacidad.html">Políticas de privacidad</a>
+                        <a href="http://ayuda.mercadolibre.com.ar/">Ayuda</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="nav-footer-downloadapp-wrapper">
+                <!-- "Download app" button -->
+                <a class="nav-footer-downloadapp" href="http://www.mercadolibre.com.ar/gz/app">
+                    <i class="nav-icon nav-icon-downloadapp"></i>
+                    ¡Descarga gratis la App de Mercado Libre!
+                </a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,2 +1,2 @@
-# ml-statics
-ML Statics
+# Pages
+Personal
