@@ -851,7 +851,7 @@ body {
 #nav-header-menu {
   display: block;
   font-size: 0;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 16px;
   background-color: transparent;
   float: right;
   height: 56px;
@@ -994,9 +994,9 @@ body {
 
 .nav-logo {
   background-image: url("logo__large.png");
-  height: 40px;
-  top: 8px;
-  width: 140px; }
+  height: 34px;
+  top: 11px;
+  width: 134px; }
 
 [data-country='BR'] .nav-logo,
 [data-country='PT'] .nav-logo {
@@ -1007,8 +1007,8 @@ body {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .nav-logo {
     background-image: url("logo__large@2x.png");
-    -webkit-background-size: 140px 40px;
-            background-size: 140px 40px; }
+    -webkit-background-size: 134px 34px;
+            background-size: 134px 34px; }
   [data-country='BR'] .nav-logo,
   [data-country='PT'] .nav-logo {
     background-image: url("logo__large@2x.png"); } }
@@ -1308,9 +1308,6 @@ button.nav-search-btn:focus {
   background-color: #fff159;
   -webkit-box-shadow: 0 1px 2px 0 rgba(51, 51, 51, 0.15), inset 0 -1px 0 0 #e6cf00;
           box-shadow: 0 1px 2px 0 rgba(51, 51, 51, 0.15), inset 0 -1px 0 0 #e6cf00; }
-
-.nav-logo {
-  background-position: 0 3px; }
 
 input[type='text'].nav-search-input::-webkit-input-placeholder {
   visibility: visible; }
