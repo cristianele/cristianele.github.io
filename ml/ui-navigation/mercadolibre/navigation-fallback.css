@@ -325,6 +325,9 @@ body {
     right: 15.5px;
     pointer-events: none; }
 
+.nav-menu {
+  display: none; }
+
 .nav-logo {
   background-image: url("logo__small.png");
   background-repeat: no-repeat;

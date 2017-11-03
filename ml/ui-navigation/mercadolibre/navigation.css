@@ -325,6 +325,9 @@ body {
     right: 15.5px;
     pointer-events: none; }
 
+.nav-menu {
+  display: none; }
+
 .nav-logo {
   background-image: url("logo__small.png");
   background-repeat: no-repeat;
@@ -985,7 +988,7 @@ button.nav-search-btn:focus {
     width: 134px; }
   [data-country='BR'] .nav-logo,
   [data-country='PT'] .nav-logo {
-    background-image: url("logo__large.png"); }
+    background-image: url("logo-pt__large.png"); }
   /* Retina
 ---------------------------------------------------------------*/ }
 
@@ -996,7 +999,7 @@ button.nav-search-btn:focus {
             background-size: 134px 34px; }
   [data-country='BR'] .nav-logo,
   [data-country='PT'] .nav-logo {
-    background-image: url("logo__large@2x.png"); } }
+    background-image: url("logo-pt__large@2x.png"); } }
 
 @media (min-width: 1024px) {
   .nav-search {
@@ -1273,55 +1276,113 @@ button.nav-search-btn:focus {
   .nav-header {
     background-color: #fff159;
     -webkit-box-shadow: 0 1px 2px 0 rgba(51, 51, 51, 0.15), inset 0 -1px 0 0 #e6cf00;
-            box-shadow: 0 1px 2px 0 rgba(51, 51, 51, 0.15), inset 0 -1px 0 0 #e6cf00; }
+            box-shadow: 0 1px 2px 0 rgba(51, 51, 51, 0.15), inset 0 -1px 0 0 #e6cf00;
+    height: auto; }
+    .nav-header .nav-bounds {
+      height: auto;
+      min-height: 56px; }
   input[type='text'].nav-search-input::-webkit-input-placeholder {
     visibility: visible; }
   input[type='text'].nav-search-input:-ms-input-placeholder {
     visibility: visible; }
   input[type='text'].nav-search-input::placeholder {
     visibility: visible; }
-  #nav-header-menu a {
-    padding-top: 0;
-    padding-bottom: 0; }
-    #nav-header-menu a [class^='nav-icon-']:before,
-    #nav-header-menu a [class*=' nav-icon-']:before {
-      display: inline-block; }
-    #nav-header-menu a.option-help, #nav-header-menu a.option-cart {
-      border-left: 1px solid rgba(51, 51, 51, 0.2); }
-    #nav-header-menu a.notifications-widget, #nav-header-menu a.bookmarks-widget, #nav-header-menu a.option-help {
-      padding-left: 16px;
-      padding-right: 16px; }
-    #nav-header-menu a.notifications-widget {
-      padding-right: 8px; }
-    #nav-header-menu a.bookmarks-widget {
-      padding-left: 8px; }
-    #nav-header-menu a.option-sell {
-      margin-left: 9px; }
-    #nav-header-menu a.option-logout {
-      display: block; }
-  #nav-header-menu:first-child {
-    border-left: none; }
-  #nav-header-menu .option-cart {
-    display: inline; }
-  #nav-header-menu i:before {
-    text-shadow: none; }
-  #nav-header-menu i.nav-icon-help:before {
-    font-size: 16px; }
-  #nav-header-menu .nav-icon-notifications:before {
-    content: '\EA25'; }
-  #nav-header-menu .nav-icon-bookmarks:before {
-    content: '\EA1E'; }
-  #nav-header-menu .nav-icon-help:before {
-    content: '\EA24'; }
-  #nav-header-menu .nav-icon-user:before {
-    content: '\EA28';
-    margin-right: 3px;
-    font-size: 22px; }
+  #nav-header-menu {
+    height: 52px; }
+    #nav-header-menu a {
+      padding-top: 0;
+      padding-bottom: 0; }
+      #nav-header-menu a [class^='nav-icon-']:before,
+      #nav-header-menu a [class*=' nav-icon-']:before {
+        display: inline-block; }
+      #nav-header-menu a.option-help, #nav-header-menu a.option-cart {
+        border-left: 1px solid rgba(51, 51, 51, 0.2); }
+      #nav-header-menu a.notifications-widget, #nav-header-menu a.bookmarks-widget, #nav-header-menu a.option-help {
+        padding-left: 16px;
+        padding-right: 16px; }
+      #nav-header-menu a.notifications-widget {
+        padding-right: 8px; }
+      #nav-header-menu a.bookmarks-widget {
+        padding-left: 8px; }
+      #nav-header-menu a.option-sell {
+        margin-left: 9px; }
+      #nav-header-menu a.option-logout {
+        display: block; }
+    #nav-header-menu:first-child {
+      border-left: none; }
+    #nav-header-menu .option-cart {
+      display: inline; }
+    #nav-header-menu i:before {
+      text-shadow: none; }
+    #nav-header-menu i.nav-icon-help:before {
+      font-size: 16px; }
+    #nav-header-menu .nav-icon-notifications:before {
+      content: '\EA25'; }
+    #nav-header-menu .nav-icon-bookmarks:before {
+      content: '\EA1E'; }
+    #nav-header-menu .nav-icon-help:before {
+      content: '\EA24'; }
+    #nav-header-menu .nav-icon-user:before {
+      content: '\EA28';
+      margin-right: 3px;
+      font-size: 22px; }
+  .nav-menu {
+    display: block;
+    margin: 0 0 0 -150px;
+    max-width: 770px;
+    float: left; }
+  .nav-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 10px; }
+  .nav-menu-item,
+  .nav-menu-categories {
+    display: inline-block;
+    font-size: 15px; }
+    .nav-menu-item a,
+    .nav-menu-categories a {
+      text-decoration: none; }
+  .nav-menu-item {
+    display: inline-block;
+    padding-right: 35px;
+    font-size: 15px; }
+    .nav-menu-item a {
+      color: rgba(51, 51, 51, 0.6); }
+    .nav-menu-item:last-child {
+      padding-right: 0; }
+  .nav-menu-categories {
+    font-weight: 600;
+    width: 145px; }
+    .nav-menu-categories a {
+      color: #333; }
+    .nav-menu-categories i {
+      color: rgba(51, 51, 51, 0.3);
+      display: inline-block;
+      font-size: 10px;
+      margin-left: 5px;
+      will-change: transform;
+      -webkit-transition: -webkit-transform .3s ease-out;
+      transition: -webkit-transform .3s ease-out;
+      transition: transform .3s ease-out;
+      transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+              transform: rotate(0); }
+      .nav-menu-categories i.down {
+        -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg); } }
+
+@media (min-width: 1024px) and (max-width: 1096px) {
+  .nav-menu-categories + .nav-menu-item {
+    display: none; } }
+
+@media (min-width: 1024px) {
   .nav-bounds.nav-bounds-with-cart #nav-header-menu {
-    margin-right: 45px; }
+    margin: 48px 45px 0 0; }
   .nav-bounds.nav-bounds-with-cart .nav-cart {
     border-left: 1px solid rgba(51, 51, 51, 0.2);
-    top: 18px;
+    top: 66px;
     height: 19px; }
     .nav-bounds.nav-bounds-with-cart .nav-cart .nav-icon-cart {
       margin-left: 0; }
